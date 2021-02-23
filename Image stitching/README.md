@@ -3,14 +3,15 @@
 ## Two images:
 
 ### Origin:
-![](original_fansipan.png)
+![](demo/original_fansipan.png)
 
 ## Result:
-![](stitched_fansipan.png)
+![](demo/stitched_fansipan.png)
 
 ## Multiple images:
 
 ### Origin:
+![]
 
 
 ### Result:
