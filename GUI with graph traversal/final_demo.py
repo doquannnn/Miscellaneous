@@ -5,12 +5,11 @@
 # Created by: PyQt5 UI code generator 5.14.1
 #
 # WARNING! All changes made in this file will be lost!
-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 import D_graph as weighted_graph
 import DFS_graph as depth_graph
 import BFS_graph as breadth_graph
+
 
 class Ui_MainWindow(object):
     def __init__(self):
@@ -124,7 +123,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Pathfinding Algorithms Demo"))
+        MainWindow.setWindowTitle(_translate(
+            "MainWindow", "Pathfinding Algorithms Demo"))
         self.BFS_button.setText(_translate("MainWindow", "BFS"))
         self.DFS_button.setText(_translate("MainWindow", "DFS"))
         self.d_button.setText(_translate("MainWindow", "Dijkstra"))
@@ -160,8 +160,8 @@ class Ui_MainWindow(object):
     def source_pressed(self):
         source = int(self.comboBox_source.currentText())
         traverse_path = ""
-                                                                                                                                             
-        if self.BFS_activate:    
+
+        if self.BFS_activate:
             breadth_graph.BFS(source)
             traversed_path = ' '.join(breadth_graph.trace)
 
@@ -171,7 +171,7 @@ class Ui_MainWindow(object):
 
         elif self.Dijkstra_activate:
             weighted_graph.Dijkstra(source)
-            traversed_path = ' '.join(weighted_graph.trace) 
+            traversed_path = ' '.join(weighted_graph.trace)
 
         else:
             traversed_path = "Please select one algorithm!"
@@ -183,7 +183,6 @@ class Ui_MainWindow(object):
         to = int(self.comboBox_to.currentText())
         path = ""
 
-        
         if self.BFS_activate:
             breadth_graph.BFS(fro)
             path = breadth_graph.tracePath(fro, to)
@@ -197,7 +196,6 @@ class Ui_MainWindow(object):
             path = "Please select one algorithm!"
 
         self.label_path.setText(f'PATH: {path}')
-
 
     def show_DFS(self):
         self.DFS_activate = True
@@ -216,6 +214,7 @@ class Ui_MainWindow(object):
         self.BFS_activate = False
         self.DFS_activate = False
         self.label_image.setPixmap(QtGui.QPixmap("d.png"))
+
 
 if __name__ == "__main__":
     import sys
