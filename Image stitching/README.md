@@ -1,5 +1,3 @@
-
-
 ## Two images:
 
 ### Origin:
@@ -11,8 +9,8 @@
 ## Multiple images:
 
 ### Origin:
-![]
-
+![](demo/original_countryside.png)
 
 ### Result:
+![](demo/stitched_countryside.png)
 

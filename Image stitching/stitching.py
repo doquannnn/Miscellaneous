@@ -56,11 +56,7 @@ def better_stitched(original_stitched):
 
 stitched = better_stitched(original_stitched)
 
-for id, image in enumerate(images):
-    cv2.imshow(f'image + {id}', image)
 
+cv2.imshow('primitive stitching', original_stitched)
+cv2.imshow('better stitching', stitched)
 cv2.waitKey()
-
-# cv2.imshow('primitive stitching', original_stitched)
-# cv2.imshow('better stitching', stitched)
-# cv2.waitKey()
