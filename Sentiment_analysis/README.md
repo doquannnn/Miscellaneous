@@ -5,12 +5,12 @@
 
 ### Sad reaction:
 
-![](https://github.com/doquannnn/Datat-Science-Project/blob/master/Sentiment%20analysis/demos/sad_status.png)
+![](https://github.com/doquannnn/Miscellaneous/tree/master/Sentiment_analysis/demos/sad_status.png)
 
-![](https://github.com/doquannnn/Datat-Science-Project/blob/master/Sentiment%20analysis/demos/sad_react.png)
+![](https://github.com/doquannnn/Miscellaneous/tree/master/Sentiment_analysis/demos/sad_react.png)
 
 ### Happy reaction:
 
-![](https://github.com/doquannnn/Datat-Science-Project/blob/master/Sentiment%20analysis/demos/happy_status.png)
+![](https://github.com/doquannnn/Miscellaneous/tree/master/Sentiment_analysis/demos/happy_status.png)
 
-![](https://github.com/doquannnn/Datat-Science-Project/blob/master/Sentiment%20analysis/demos/happy_react.png)
+![](https://github.com/doquannnn/Miscellaneous/tree/master/Sentiment_analysis/demos/happy_react.png)
