@@ -16,7 +16,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def __init__(self):
-        self.model = joblib.load('grid_tfidf.joblib').best_estimator_
+        self.model = joblib.load("grid_tfidf.joblib").best_estimator_
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
         self.predict.setText(_translate("MainWindow", "PREDICT"))
 
     def predict_pressed(self):
-        self.status = pd.DataFrame([self.text.toPlainText()], columns=['text'])
+        self.status = pd.DataFrame([self.text.toPlainText()], columns=["text"])
         result = self.model.predict(self.status)[0]
 
         if result == 0:
@@ -80,6 +80,7 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
