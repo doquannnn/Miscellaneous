@@ -364,8 +364,8 @@ labels = ["Đặng Nguyễn Anh Tuấn", "Đinh Xuân Vũ", "Đỗ Mạnh Quân"
 
     // Load model
      $("document").ready (async function() {
-        model = await tf.loadLayersModel('http://0.0.0.0:5000/static/tfjs_model/model.json');
-        console.log('Load model');
+        model = await tf.loadLayersModel('./static/tfjs_model/model.json');
+        console.log('Succeeded');
         console.log(model.summary());
     });
 
@@ -384,7 +384,6 @@ labels = ["Đặng Nguyễn Anh Tuấn", "Đinh Xuân Vũ", "Đỗ Mạnh Quân"
             .toFloat()
             .sub(normalizationOffset)
             .div(normalizationOffset)
-            .reverse(2)
             .expandDims();
 
     // 2. Predict
