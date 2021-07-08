@@ -6,4 +6,4 @@ terminal/command line: python/python3 deployment.py
 
 -----------------------
 
-![](frontend/results/2.png)
+![](results/2.png)
