@@ -16,7 +16,7 @@ import time
 # model = VGGFace(model='resnet50', include_top=False, input_shape=(224, 224, 3), pooling='avg')
 # model.save('pretrained_model')
 
-model = load_model('models/pretrained_model')
+model = load_model('models/embedding')
 
 """1"""
 # print(model.summary())
@@ -76,7 +76,7 @@ def test(imgPath):
 
 t2 = time.time()
 
-imgPath = 'test/2.jpg'
+imgPath = 'test/5.jpg'
 
 face, dis_vec = test(imgPath)
 img = cv2.imread(imgPath)
