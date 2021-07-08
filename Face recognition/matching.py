@@ -6,6 +6,8 @@ from keras_vggface.utils import preprocess_input
 
 model = models.load_model('models/embedding')
 
+
+# file json để lưu ground truth embedding vector của từng khuôn mặt - list of vectors
 with open('embedding_database.json', 'r') as openfile:
 
     # Reading from json file
@@ -13,7 +15,7 @@ with open('embedding_database.json', 'r') as openfile:
 
 face_embeddings = list(map(np.array, json_object))
 
-
+# nhãn tên tương ứng
 labels = [
     "Dang Nguyen Anh Tuan",
     "Dinh Xuan Vu",

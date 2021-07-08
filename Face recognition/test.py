@@ -1,4 +1,7 @@
 
+# tạo ra file json - list of ground truth embedding vectors
+# thử nghiệm trên backend trước khi deploy
+
 import cv2
 from keras_vggface.vggface import VGGFace
 from tensorflow.python.keras.utils import generic_utils
