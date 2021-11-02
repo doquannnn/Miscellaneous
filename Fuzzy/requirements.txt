@@ -1,0 +1,5 @@
+matplotlib==3.3.2
+tk==8.6
+numpy==1.19.5
+scikit-fuzzy=0.4.2
+
